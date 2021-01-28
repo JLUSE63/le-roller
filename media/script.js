@@ -51,5 +51,6 @@ window.addEventListener("load", function () {
 			}
 		}
 	}
+	jourNuit()
 	console.log("Page charg\351e.");
 });
