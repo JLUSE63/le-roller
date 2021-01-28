@@ -80,7 +80,7 @@ window.addEventListener("load", function () {
 		a.appendChild(lien);
 		a.href = `../../${MyLinks[i][1]}`;
 		li.appendChild(a);
-		document.getElementById("ClasseDeMesSources").appendChild(li);
+		document.getElementById("UlDeMesSources").appendChild(li);
 	}
 	for (i in Links) {
 	 	let a = document.createElement('a');
@@ -89,7 +89,7 @@ window.addEventListener("load", function () {
 		a.appendChild(lien);
 		a.href = Links[i][2];
 		li.appendChild(a);
-		document.getElementById("ClasseDesSources").appendChild(li);
+		document.getElementById("UlDesSources").appendChild(li);
 	}
 	for (var i = (Math.abs(Links.length - MyLinks.length)); i > 0; i--) {
 		if(Links.length > MyLinks.length) {
