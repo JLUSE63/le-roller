@@ -49,10 +49,12 @@ window.addEventListener("load", function () {
 			}
 		}
 	}
-	inputBoutton.title = "Appuie pour mettre en mode sombre !";
-	inputBoutton.value = "Darkmode";
-	inputBoutton.style.backgroundColor = "#333";
-	inputBoutton.style.color = "#D3D3D3";
-	lienCSS.href = "./media/styleWhite.css";
+	setTimeout(() => {
+		inputBoutton.title = "Appuie pour mettre en mode sombre !";
+		inputBoutton.value = "Darkmode";
+		inputBoutton.style.backgroundColor = "#333";
+		inputBoutton.style.color = "#D3D3D3";
+		lienCSS.href = "./media/styleWhite.css";
+	}, 500);
 	console.log("Page charg\351e.");
 });
