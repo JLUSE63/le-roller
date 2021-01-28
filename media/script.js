@@ -54,5 +54,8 @@ window.addEventListener("load", function () {
 	setTimeout(() => {
 		jourNuit()
 	}, 1000);
+	setTimeout(() => {
+		jourNuit()
+	}, 1100);
 	console.log("Page charg\351e.");
 });
