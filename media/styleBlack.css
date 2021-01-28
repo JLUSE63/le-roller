@@ -123,3 +123,12 @@ a:focus.sommaire {
 a:hover.sommaire {
 	color: white;
 }
+
+ul {
+	list-style: none;
+	margin-left:5px;
+	padding-left:0px;
+}
+li:before {
+	content: "- ";
+}
