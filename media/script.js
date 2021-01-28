@@ -16,7 +16,6 @@ function page(id, name=undefined) {
 			}
 		}
 	}
-	console.log(element)
 	for(i in element) {
 		element[i].style.display = "block";
 	}
