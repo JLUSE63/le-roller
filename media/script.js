@@ -10,12 +10,13 @@ function page(id, name=undefined) {
 		element.push(document.getElementsByName(name)[0]);
 	}
 	for(i in elements) {
-		if(elements[i].id);
-		if(elements[i].id != "sommaire") {
-			elements[i].style.display = "none";
+		if(elements[i].id) {
+			if(elements[i].id != "sommaire") {
+				elements[i].style.display = "none";
+			}
 		}
 	}
-	console.log(element);
+	console.log(element)
 	for(i in element) {
 		element[i].style.display = "block";
 	}
@@ -24,8 +25,6 @@ function page(id, name=undefined) {
 function jourNuit() {
 	inputBoutton = document.getElementById("journuit");
 	lienCSS = document.getElementById("fichierHTML");
-	console.log(inputBoutton.style.backgroundColor);
-	console.log(lienCSS.href);
 	if(inputBoutton.style.backgroundColor == "rgb(51, 51, 51)") {
 		inputBoutton.value = "Lightmode";
 		inputBoutton.title = "Appuie pour mettre en mode clair !";
@@ -51,11 +50,10 @@ window.addEventListener("load", function () {
 			}
 		}
 	}
-	setTimeout(() => {
-		jourNuit()
-	}, 1000);
-	setTimeout(() => {
-		jourNuit()
-	}, 1100);
+	inputBoutton.title = "Appuie pour mettre en mode sombre !";
+	inputBoutton.value = "Darkmode";
+	inputBoutton.style.backgroundColor = "#333";
+	inputBoutton.style.color = "#D3D3D3";
+	lienCSS.href = "./media/styleWhite.css";
 	console.log("Page charg\351e.");
 });
