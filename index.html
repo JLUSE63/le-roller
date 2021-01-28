@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Le Roller</title>
+	<link id="fichierHTML" rel="stylesheet" type="text/css" href="./media/stylewhite.css">
+	<link rel="icon" type="icon" href="./media/images/icon.jpg">
+	<script type="text/javascript" src="./media/script.js"></script>
+</head>
+<body>
+	<h1 name="top"><u>Le roller</u></h1>
+	<input type="button" class="bouton" name="mode" id="journuit" onclick="jourNuit()" style="background-color: #333; color: #ababab" title="Appuie pour mettre en mode sombre !" value="Darkmode">
+	<div class="page">
+		<div class="page_left">
+			<div id="sommaire" class="sousDiv">
+				<h2>Sommaire</h2>
+				<p class="paragraphe"><a class="sommaire" onclick="page('histoire')">Histoire</a></p>
+				<p class="paragraphe"><a class="sommaire" onclick="page('definition')">Définition</a></p>
+				<p class="paragraphe"><a class="sommaire" onclick="page('typeDeRollers')">Type de rollers</a></p>
+				<div id="typeDeRollers" name="typeDeRollers">
+					<li><a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')">Les patins à roulettes</a></li>
+					<li><a class="sommaire" onclick="page(id='LeRollerFitness', name='typeDeRollers')">Le roller fitness</a></li>
+					<li><a class="sommaire" onclick="page(id='LeRollerFreeskate', name='typeDeRollers')">Le roller freeskate</a></li>
+					<li><a class="sommaire" onclick="page(id='LeRollerAgressif', name='typeDeRollers')">Le roller agressif</a></li>
+					<li><a class="sommaire" onclick="page(id='LeRollerDeVitesse', name='typeDeRollers')">Le roller de vitesse</a></li>
+					<li><a class="sommaire" onclick="page(id='LeQuad', name='typeDeRollers')">Le quad</a></li>
+					<li><a class="sommaire" onclick="page(id='LeRollerToutTerrain', name='typeDeRollers')">Le roller tout terrain</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="page_right">
+			<div id="histoire" class="sousDiv">
+				<h2>L'histoire</h2>
+				<p class="paragraphe">
+					<h3>Quelques dates</h3>
+					<p>
+						C'est en 1760 que le Belge Jean-Joseph Merlin fixe deux rouleaux de métal sur une plaque de bois, pour remplacer le patin à glace en été.<br>Le Français, Petibled, reprend le concepte de patin à glace en été sur des patins de bois et de métal à trois roues en lignes muni d'un butoire en guise de frein.<br>C'est seulement en 1863 que le premier brevet pour des rollers, les patins à essieux (ou <a class="sommaire" onclick="page(id='LeQuad', name='typeDeRollers')">quad</a>), est déposé par James Plimpton le 4 janvier de cette année.<br>En 1876 un hall destiné à faire du roller crée une émeute à son ouverture.<br>La construction d'une patinoire (à roullettes) couverte rue Veydt à Bruxelles le <i>Royal Skating</i>. En 1884 les roues sont adaptées avec des roullements à billes.<br>C'est en 1969 que les rollers que nous connaissons aujourd'hui font leur première apparition par le japonais Yoshisada Hotiuchi, il ne faudra attendre que 10 ans avant d'avoir la version finale du <a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')">patin à roulettes</a>.
+					</p>
+				</p>
+			</div>
+			<div id="definition" class="sousDiv">
+				<h2>Définitions</h2>
+				<p class="paragraphe">
+					<h3><a href="https://www.larousse.fr/dictionnaires/francais/roller/69738">Du dictionnaire La Rousse</a></h3>
+					<p>
+						Variété de <a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')" id="LesPatinsRoulettes" name="typeDeRollers">patin à roulettes</a>, constitué d'une platine munie de quatre roues et fixée à une chaussure spéciale. (On distingue les rollers en ligne, dont les quatre roulettes sont alignées à l'instar de la lame du patin à glace, et <a class="sommaire" onclick="page(id='LeQuad', name='typeDeRollers')">les quads</a>, dont les roulettes sont disposées deux à deux à l'extrémité de deux essieux.)<br>Sport pratiqué avec ces patins, et comprenant le patinage artistique, la course, la danse, le rink-hockey et le roller acrobatique (slalom, saut, rampe).
+					</p>
+				</p>
+				<p class="paragraphe">
+					<h3><a href="https://dictionnaire.lerobert.com/definition/roller">Du dictionnaire Le Robert</a></h3>
+					<p>
+						ANGLICISME: <a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')" id="LesPatinsRoulettes" name="typeDeRollers">Patin à roulettes</a> auquel est fixée une chaussure haute et rigide. Des rollers.<br>-  Faire du roller: patiner avec des rollers.
+					</p>
+				</p>
+				<p class="paragraphe">
+					<h3><a href="https://fr.wikipedia.org/wiki/Patinage_%C3%A0_roulettes">De Wikipédia</a></h3>
+					<p>
+						Le patinage à roulettes ou roller (abréviation de l'anglais anglais : <i>roller skating</i> qui signifie « patinage à roulettes »), est un mode de déplacement qui consiste à se déplacer sur des chaussures montées sur roues, appelées <a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')" id="LesPatinsRoulettes" name="typeDeRollers">patins à roulettes</a> ou rollers.
+					</p>
+				</p>
+			</div>
+			<div id="typeDeRollers" class="sousDiv">
+				<h2>Les différents types de rollers</h2>
+				<p class="paragraphe">
+					<h3 name="LesPatinsRoulettes"><a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')">Les patins à roulettes</a></h3>
+					<img src="./media/images/LesPatinsRoulettes.jpg" alt="Les patins à roulettes" height="80">
+					<p>"Patin à roulettes" est le nom donné aux anciens rollers, le quad.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerFitness"><a class="sommaire" onclick="page(id='LeRollerFitness', name='typeDeRollers')">Le roller fitness</a></h3>
+					<img src="./media/images/LeRollerFitness.jpg" alt="Le roller fitness" height="80">
+					<p>Le roller fitness est le roller le plus répandu, il est parfait pour les trajet rapide en ville.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerFreeskate"><a class="sommaire" onclick="page(id='LeRollerFreeskate', name='typeDeRollers')">Le roller freeskate</a></h3>
+					<img src="./media/images/LeRollerFreeskate.jpg" alt="Le roller freeskate" height="80">
+					<p>Le roller freeskate est un roller maniable, pratique pour le slalom, le slide et d'autres accrobaties urbaines modérées.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerAgressif"><a class="sommaire" onclick="page(id='LeRollerAgressif', name='typeDeRollers')">Le roller agressif</a></h3>
+					<img src="./media/images/LeRollerAgressif.jpg" alt="Le roller agressif" height="80">
+					<p>Le roller agressif ou roller street est utilsé sur rampe et dans les skate park pour réaliser des cascades, glissades et figures acrobatiques.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerDeVitesse"><a class="sommaire" onclick="page(id='LeRollerDeVitesse', name='typeDeRollers')">Le roller de vitesse</a></h3>
+					<img src="./media/images/LeRollerDeVitesse.jpg" alt="Le roller de vitesse" height="80">
+					<p>Le roller de vitesse est adapté seulement du fait de sa longueur au courses.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeQuad"><a class="sommaire" onclick="page(id='LeQuad', name='typeDeRollers')">Le quad</a></h3>
+					<img src="./media/images/LeQuad.jpg" alt="Le quad" height="80">
+					<p>Ce roller est l’évolution du <a class="sommaire" onclick="page(id='LesPatinsRoulettes', name='typeDeRollers')">patin à roulettes</a> original. Le Quad est le seul roller vraiment adapté à la pratique de la danse.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerToutTerrain"><a class="sommaire" onclick="page(id='LeRollerToutTerrain', name='typeDeRollers')">Le roller tout terrain</a></h3>
+					<img src="./media/images/LeRollerToutTerrain.jpg" alt="Le roller tout terrain" height="80">
+					<p>Le roller tout terrain est conçu pour les chemins de terre, d’herbe, de rocaille, voir même les endroits un peu sableux.</p>
+				</p>
+			</div>
+			<div name="LesDifferentsTypesDeRollers">
+				<div id="LesPatinsRoulettes" class="sousDiv">
+					<h2>Les patins à roulettes</h2>
+					<p class="paragraphe">
+						Le patin à roullettes fait sa première apparition en 1969 mais sera vite remplacer par le <a class="sommaire" onclick="page(id='LeRollerFitness', name='typeDeRollers')">roller fitness</a> 
+					</p>
+				</div>
+				<div id="LeRollerFitness" class="sousDiv">
+					<h2>Le roller fitness</h2>
+				</div>
+				<div id="LeRollerFreeskate" class="sousDiv">
+					<h2>Le roller freeskate</h2>
+				</div>
+				<div id="LeRollerAgressif" class="sousDiv">
+					<h2>Le roller agressif</h2>
+				</div>
+				<div id="LeRollerDeVitesse" class="sousDiv">
+					<h2>Le roller de vitesse</h2>
+				</div>
+				<div id="LeQuad" class="sousDiv">
+					<h2>Le quad</h2>
+				</div>
+				<div id="LeRollerToutTerrain" class="sousDiv">
+					<h2>Le roller tout terrain</h2>
+				</div>
+			</div>
+		</div>
+		<div class="page_foot">
+			<br><br>
+			<button onclick="window.location.href = './pages/pageSources/pageSources.html';" class="bouton">Nos sources</button>
+			<button onclick="window.location.href = '#top';" class="bouton">Retour en haut de page</button>
+			<br><br><br><br>
+		</div>
+	</div>
+</body>
+</html>
