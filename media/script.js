@@ -1,4 +1,9 @@
-function page(id, name=undefined) {
+function erreur(typeErr) {
+	console.log(typeErr);
+}
+
+function page(id=undefined, name=undefined, titre=undefined) {
+	if(id == undefined) return erreur("id is undefined.");
 	let element = new Array();
 	let elements = document.getElementsByTagName("div");
 	for(i in elements) {
@@ -17,7 +22,16 @@ function page(id, name=undefined) {
 		}
 	}
 	for(i in element) {
-		element[i].style.display = "block";
+		if(element[i] == undefined) {
+			erreur("i is undefined.");
+		} else {
+			element[i].style.display = "block";
+		}
+	}
+	if(titre != undefined) {
+		document.title = "Le Roller - " + titre;
+	} else {
+		document.title = "Le Roller";
 	}
 }
 
@@ -49,6 +63,7 @@ window.addEventListener("load", function () {
 			}
 		}
 	}
+	document.title = "Le Roller - Histoire"
 	setTimeout(() => {
 		jourNuit()
 	}, 1000);
