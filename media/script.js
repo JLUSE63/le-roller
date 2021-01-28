@@ -55,6 +55,6 @@ window.addEventListener("load", function () {
 		inputBoutton.style.backgroundColor = "#333";
 		inputBoutton.style.color = "#D3D3D3";
 		lienCSS.href = "./media/styleWhite.css";
-	}, 500);
+	}, 1000);
 	console.log("Page charg\351e.");
 });
