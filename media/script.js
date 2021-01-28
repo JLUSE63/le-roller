@@ -50,11 +50,10 @@ window.addEventListener("load", function () {
 		}
 	}
 	setTimeout(() => {
-		inputBoutton.title = "Appuie pour mettre en mode sombre !";
-		inputBoutton.value = "Darkmode";
-		inputBoutton.style.backgroundColor = "#333";
-		inputBoutton.style.color = "#D3D3D3";
-		lienCSS.href = "./media/styleWhite.css";
+		jourNuit()
 	}, 1000);
+	setTimeout(() => {
+		jourNuit()
+	}, 1100);
 	console.log("Page charg\351e.");
 });
