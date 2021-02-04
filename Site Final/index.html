@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Le Roller</title>
+	<link id="fichierHTML" rel="stylesheet" type="text/css" href="./media/stylewhite.css">
+	<link rel="icon" type="icon" href="./media/images/icon.jpg">
+	<script type="text/javascript" src="./media/script.js"></script>
+</head>
+<body>
+	<h1 name="top"><u>Le roller</u></h1>
+	<input type="button" class="bouton" name="mode" id="journuit" onclick="jourNuit()" style="background-color: #333; color: #ababab" title="Appuie pour mettre en mode sombre !" value="Darkmode">
+	<div class="page">
+		<div class="page_left">
+			<div id="sommaire" class="sousDiv">
+				<h2>Sommaire</h2>
+				<p class="paragraphe"><a class="sommaire" onclick="page('histoire', undefined, 'Histoire')">Histoire</a></p>
+				<p class="paragraphe"><a class="sommaire" onclick="page('definition', undefined, 'Définition')">Définition</a></p>
+				<p class="paragraphe"><a class="sommaire" onclick="page('typeDeRollers', undefined, 'Types de rollers')">Types de rollers</a></p>
+				<div id="typeDeRollers" name="typeDeRollers">
+					<ul>
+						<a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')"><li>Les patins à roulettes</li></a>
+						<a class="sommaire" onclick="page('LeRollerFitness', 'typeDeRollers', 'Le roller fitness')"><li>Le roller fitness</li></a>
+						<a class="sommaire" onclick="page('LeRollerFreeskate', 'typeDeRollers', 'Le roller freeskate')"><li>Le roller freeskate</li></a>
+						<a class="sommaire" onclick="page('LeRollerAgressif', 'typeDeRollers', 'Le roller agressif')"><li>Le roller agressif</li></a>
+						<a class="sommaire" onclick="page('LeRollerDeVitesse', 'typeDeRollers', 'Le roller de vitesse')"><li>Le roller de vitesse</li></a>
+						<a class="sommaire" onclick="page('LeQuad', 'typeDeRollers', 'Le quad')"><li>Le quad</li></a>
+						<a class="sommaire" onclick="page('LeRollerToutTerrain', 'typeDeRollers', 'Le roller tout terrain')"><li>Le roller tout terrain</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page_right">
+			<div id="histoire" class="sousDiv">
+				<h2>L'histoire</h2>
+				<p class="paragraphe">
+					<h3>Quelques dates</h3>
+					<p>
+						C'est en 1760 que John Joseph Merlin (1735-1803), originaire de Huy, ville de la Belgique actuelle qui était à l'époque en Pays-Bas Autrichiens, fixe deux rouleaux en métal en ligne sous une plaque de bois, pour remplacer le patin à glace en été.</br>
+						Le Français, Charles-Louis Petibled reprend le concepte de patin à glace en été sur des patins de bois et de métal à trois roues en lignes muni d'un butoire en guise de frein. C'est aussi lui qui a déposé le premier brevet du <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">patin à roulletes</a> le 12 novembre 1819.</br>
+						En 1863 un brevet pour des patins à essieux (ancêtre du <a class="sommaire" onclick="page('LeQuad', 'typeDeRollers', 'Le quad')">quad</a>) est déposé par James Plimpton le 4 janvier.</br>
+						La première patinoire à roullettes fut construite en 1863 à New York. Il a fallut attentre 1877 avant de voir arriver la première patinoire couverte rue Veydt à Bruxelles le <i>Royal Skating</i>.</br>
+						En 1876 un hall à Paris destiné à faire du roller crée une émeute à son ouverture.</br>
+						En 1884 les roues sont adaptées avec <a class="sommaire" onclick="page('roulementABille', 'PageInfo', 'Roulements')">des roullements à billes</a>.</br>
+						C'est en 1969 que les rollers que nous connaissons aujourd'hui font leur première apparition par le japonais Yoshisada Horiuchi, il ne faudra attendre que 10 ans avant d'avoir la version finale du <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">patin à roulettes</a>.
+					</p>
+				</p>
+			</div>
+			<div id="definition" class="sousDiv">
+				<h2>Définitions</h2>
+				<p class="paragraphe">
+					<h3><a href="https://www.larousse.fr/dictionnaires/francais/roller/69738">Du dictionnaire La Rousse</a></h3>
+					<p>
+						Variété de <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">patin à roulettes</a>, constitué d'une platine munie de quatre roues et fixée à une chaussure spéciale. (On distingue les rollers en ligne, dont les quatre roulettes sont alignées à l'instar de la lame du patin à glace, et <a class="sommaire" onclick="page('LeQuad', 'typeDeRollers', 'Le quad')">les quads</a>, dont les roulettes sont disposées deux à deux à l'extrémité de deux essieux.)</br>
+						Sport pratiqué avec ces patins, et comprenant le patinage artistique, la course, la danse, le rink-hockey et le roller acrobatique (slalom, saut, rampe).
+					</p>
+				</p>
+				<p class="paragraphe">
+					<h3><a href="https://dictionnaire.lerobert.com/definition/roller">Du dictionnaire Le Robert</a></h3>
+					<p>
+						ANGLICISME: <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">Patin à roulettes</a> auquel est fixée une chaussure haute et rigide. Des rollers.</br>
+						- Faire du roller: patiner avec des rollers.
+					</p>
+				</p>
+				<p class="paragraphe">
+					<h3><a href="https://fr.wikipedia.org/wiki/Patinage_%C3%A0_roulettes">De Wikipédia</a></h3>
+					<p>
+						Le patinage à roulettes ou roller (abréviation de l'anglais anglais : <i>roller skating</i> qui signifie « patinage à roulettes »), est un mode de déplacement qui consiste à se déplacer sur des chaussures montées sur roues, appelées <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">patins à roulettes</a> ou rollers.
+					</p>
+				</p>
+			</div>
+			<div id="typeDeRollers" class="sousDiv">
+				<h2>Les différents types de rollers</h2>
+				<p class="paragraphe">
+					<h3 name="LesPatinsRoulettes"><a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">Les patins à roulettes</a></h3>
+					<img src="./media/images/LesPatinsRoulettes.jpg" alt="Les patins à roulettes" height="80">
+					<p>"Patin à roulettes" est le nom donné aux anciens rollers, le quad.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerFitness"><a class="sommaire" onclick="page('LeRollerFitness', 'typeDeRollers', 'Le roller fitness')">Le roller fitness</a></h3>
+					<img src="./media/images/LeRollerFitness.jpg" alt="Le roller fitness" height="80">
+					<p>Le roller fitness est le roller le plus répandu, il est parfait pour les trajet rapide en ville.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerFreeskate"><a class="sommaire" onclick="page('LeRollerFreeskate', 'typeDeRollers', 'Le roller freeskate')">Le roller freeskate</a></h3>
+					<img src="./media/images/LeRollerFreeskate.jpg" alt="Le roller freeskate" height="80">
+					<p>Le roller freeskate est un roller maniable, pratique pour le slalom, le slide et d'autres accrobaties urbaines modérées.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerAgressif"><a class="sommaire" onclick="page('LeRollerAgressif', 'typeDeRollers', 'Le roller agressif')">Le roller agressif</a></h3>
+					<img src="./media/images/LeRollerAgressif.jpg" alt="Le roller agressif" height="80">
+					<p>Le roller agressif ou roller street est utilsé sur rampe et dans les skate park pour réaliser des cascades, glissades et figures acrobatiques.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerDeVitesse"><a class="sommaire" onclick="page('LeRollerDeVitesse', 'typeDeRollers', 'Le roller de vitesse')">Le roller de vitesse</a></h3>
+					<img src="./media/images/LeRollerDeVitesse.jpg" alt="Le roller de vitesse" height="80">
+					<p>Le roller de vitesse est adapté seulement du fait de sa longueur au courses.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeQuad"><a class="sommaire" onclick="page('LeQuad', 'typeDeRollers', 'Le quad')">Le quad</a></h3>
+					<img src="./media/images/LeQuad.jpg" alt="Le quad" height="80">
+					<p>Ce roller est l’évolution du <a class="sommaire" onclick="page('LesPatinsRoulettes', 'typeDeRollers', 'Les patins à roulettes')">patin à roulettes</a> original. Le Quad est le seul roller vraiment adapté à la pratique de la danse.</p>
+				</p>
+				<p class="paragraphe">
+					<h3 name="LeRollerToutTerrain"><a class="sommaire" onclick="page('LeRollerToutTerrain', 'typeDeRollers', 'Le roller tout terrain')">Le roller tout terrain</a></h3>
+					<img src="./media/images/LeRollerToutTerrain.jpg" alt="Le roller tout terrain" height="80">
+					<p>Le roller tout terrain est conçu pour les chemins de terre, d’herbe, de rocaille, voir même les endroits un peu sableux.</p>
+				</p>
+			</div>
+			<div name="LesDifferentsTypesDeRollers">
+				<div id="LesPatinsRoulettes" class="sousDiv">
+					<h2>Les patins à roulettes</h2>
+					<p class="paragraphe">
+						Le patin à roullettes fait sa première apparition en 1969 mais sera vite remplacer par le <a class="sommaire" onclick="page('LeRollerFitness', 'typeDeRollers', 'Le roller fitness')">roller fitness</a> 
+					</p>
+				</div>
+				<div id="LeRollerFitness" class="sousDiv">
+					<h2>Le roller fitness</h2>
+				</div>
+				<div id="LeRollerFreeskate" class="sousDiv">
+					<h2>Le roller freeskate</h2>
+				</div>
+				<div id="LeRollerAgressif" class="sousDiv">
+					<h2>Le roller agressif</h2>
+				</div>
+				<div id="LeRollerDeVitesse" class="sousDiv">
+					<h2>Le roller de vitesse</h2>
+				</div>
+				<div id="LeQuad" class="sousDiv">
+					<h2>Le quad</h2>
+				</div>
+				<div id="LeRollerToutTerrain" class="sousDiv">
+					<h2>Le roller tout terrain</h2>
+				</div>
+			</div>
+			<div name="PageInfo">
+				<div id=roulementABille>
+					<h2>Les roulements à billes</h2>
+					<p class="paragraphe">
+						Au XVe siècle, en 1485, Léonard de Vinci, notre inventeur florentin favori, découvre le principe du roulement. S’interrogeant sur son fonctionnement, il en dessine plusieurs croquis. Ce sont vraisemblablement les premiers dessins techniques représentant le mécanisme d’un roulement à billes. L’inventeur comprend qu’en isolant les éléments roulants du dispositif, on empêche les frictions liées aux frottements des différents éléments et fluidifie le mouvement.
+					</p>
+					<p class="paragraphe">
+						C’est en 1779, en pleine révolution industrielle, que l’ingénieur et physicien français Charles-Augustin Coulomb va pour la première fois façonner et développer l’usinage des roulements à billes. Mais ce n’est qu’en 1794 qu’un Gallois, Philip Vaughan, dépose le premier brevet.
+					</p>
+					<p class="paragraphe">
+						En 1907, 422 ans après les dessins de Vinci, l’ingénieur suédois Sven Wingquist met au point un roulement à billes assez robuste pour améliorer les performances des machines de textiles de son employeur, lançant son application industrielle.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="page_foot">
+			</br></br>
+			<button onclick="window.location.href = './pages/pageSources/pageSources.html';" class="bouton">Nos sources</button>
+			<button onclick="window.location.href = '#top';" class="bouton">Retour en haut de page</button>
+			</br></br></br></br>
+		</div>
+	</div>
+</body>
+</html>
