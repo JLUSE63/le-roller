@@ -1,11 +1,15 @@
 body {
 	background-color: #D3D3D3;
+	/* background-image: url("https://images6.alphacoders.com/778/thumb-1920-778449.jpg"); */
 	color: #222;
+	font-size: 1.5em;
 }
 
 h1 {
 	text-align: center;
-	font-family: "Bell MT";
+	font-family: "Bauhaus 93";
+	font-size: 3em;
+	margin: 5px;
 }
 h2 {
 	font-family: all;
@@ -26,7 +30,7 @@ div.page_left {
 	font-family: all;
 }
 div.page_right {
-	width: 79.5%;
+	width: 75%;
 	float: right;
 	background-color: #F3F3F3;
 	border-left: 3px solid rgba(0, 0, 0, 0.75);
