@@ -1,0 +1,134 @@
+/* grafikart style */
+body {
+    background-color: #333333;
+    color: #ABABAB;
+	font-size: 1.5em;
+    padding: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Bauhaus 93";
+	font-size: 3em;
+	margin: 5px;
+}
+h2 {
+	font-family: all;
+}
+h3 {
+	font-family: "Bell MT";
+}
+
+p.paragraphe {
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.darkmode {
+	background-color: #D3D3D3;
+	color: #333333;
+	margin: 0;
+    list-style: none;
+	position: relative;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 8px 15px;
+	font-size: 24px;
+    margin-bottom: 30px;
+}
+
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #B900FF;
+}
+a:active {
+	color: #FF0000;
+}
+a:focus {
+	color: #0072C6;
+}
+a:hover {
+	color: #0072C6;
+}
+
+
+.tabs a:focus {
+	background-color: #D3D3D3;
+}
+.tabs a:hover {
+	background-color: #D3D3D3;
+}
+
+ul.tabs, li .tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tabs li {
+    float: left;
+    display: block;
+}
+.tabs a {
+    display: inline-block;
+    background-color: #555555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 10px 15px;
+}
+.tabs:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.tabs .active a {
+    background-color: #444444;
+}
+.tabs-content {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(92, 92, 92, 0.12), 0 1px 2px rgba(92, 92, 92, 0.24);
+    padding: 20px;
+    background-color: #444444;
+    margin-bottom: 30px;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#menu-deroulant {
+	text-align: left;
+}
+#menu-deroulant ul, #menu-deroulant li:hover ul ul {
+	position: absolute;
+	left: -999em;
+	text-align: left;
+	width: 160px;
+	z-index: 999;
+}
+#menu-deroulant a:hover {
+	color: #0072C6;
+	background: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#menu-deroulant li:hover ul {
+	left: auto;
+}
+#menu-deroulant li li:hover ul {
+	left: 100%;
+	top: 0%;
+}
+#menu-deroulant li ul {
+	display: flex;
+	flex-flow: wrap column;
+}
+#menu-deroulant li ul li a {
+	width: 160px;
+}
