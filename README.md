@@ -18,5 +18,6 @@ index.html</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LeRollerAgressif.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/LeRollerAgressif.jpg)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LeQuad.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/LeQuad.jpg)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[icon.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/icon.jpg)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[background](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/background.png)
 </br></br>
 ("=>" désigne un dossier / un sous dossier)
