@@ -2,8 +2,13 @@ Exposer SNT
 </br></br>
 Plan du site:
 </br></br>
-[README.txt](https://github.com/JLUSE63/le-roller.github.io/blob/index/README.md)</br>
-[index.html](https://github.com/JLUSE63/le-roller.github.io/blob/index/index.html)</br>
+README.txt</br>
+debug.log</br>
+index.html</br>
+[=> pages](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;[=> pageSources](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages/pageSources)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;[pageSources.html](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages/pageSources/pageSources.html)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;[script.js](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages/pageSources/script.js)</br>
 [=> media](https://github.com/JLUSE63/le-roller.github.io/blob/index/media)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;[script.js](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/script.js)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;[styleWhite.css](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/styleWhite.css)</br>
@@ -17,6 +22,5 @@ Plan du site:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LeRollerAgressif.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/LeRollerAgressif.jpg)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LeQuad.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/LeQuad.jpg)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[icon.jpg](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/icon.jpg)</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[background](https://github.com/JLUSE63/le-roller.github.io/blob/index/media/images/background.png)
 </br></br>
 ("=>" désigne un dossier / un sous dossier)

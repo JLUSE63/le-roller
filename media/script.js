@@ -144,7 +144,20 @@
         window.addEventListener('hashchange', hashChange);
     }
 })()
-document.getElementById("fichierCSS").href = "./media/styleWhite.css";
+if(document.location.href.includes("mode=light")) {
+	document.getElementById("fichierCSS").href = "./media/styleWhite.css";
+	document.getElementById("darkmode").value = "Lightmode";
+	document.getElementById("darkmode").title = "Appuie pour mettre en mode clair !";
+} else if(document.location.href.includes("mode=dark")) {
+	document.getElementById("fichierCSS").href = "./media/styleBlack.css";
+		document.getElementById("darkmode").value = "Darkmode";
+		document.getElementById("darkmode").title = "Appuie pour mettre en mode sombre !";
+} else {
+	document.getElementById("fichierCSS").href = "./media/styleWhite.css";
+	document.location.href = `${window.location.href}?mode=light`;
+	document.getElementById("darkmode").value = "Lightmode";
+	document.getElementById("darkmode").title = "Appuie pour mettre en mode clair !";
+}
 console.log("-- Page chargée.");
 
 // Mode Sombre
@@ -152,16 +165,17 @@ console.log("-- Page chargée.");
 function jourNuit() {
 	inputBoutton = document.getElementById("darkmode");
 	lienCSS = document.getElementById("fichierCSS");
-	console.log(lienCSS.href)
 	if(lienCSS.href.includes("styleWhite")) {
 		console.log("- La page est en sombre.")
 		inputBoutton.value = "Lightmode";
 		inputBoutton.title = "Appuie pour mettre en mode clair !";
 		lienCSS.href = "./media/styleBlack.css";
+		document.location.href = document.location.href.replace("mode=light", "mode=dark")
 	} else {
 		console.log("- La page est en clair.")
 		inputBoutton.value = "Darkmode";
 		inputBoutton.title = "Appuie pour mettre en mode sombre !";
 		lienCSS.href = "./media/styleWhite.css";
+		document.location.href = document.location.href.replace("mode=dark", "mode=light")
 	}
 };
