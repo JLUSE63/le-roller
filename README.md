@@ -2,9 +2,8 @@ Exposer SNT
 </br></br>
 Plan du site:
 </br></br>
-README.txt</br>
-debug.log</br>
-index.html</br>
+[README.txt](https://github.com/JLUSE63/le-roller.github.io/blob/index/README.md)</br>
+[index.html](https://github.com/JLUSE63/le-roller.github.io/blob/index/index.html)</br>
 [=> pages](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;[=> pageSources](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages/pageSources)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;[pageSources.html](https://github.com/JLUSE63/le-roller.github.io/blob/index/pages/pageSources/pageSources.html)</br>
