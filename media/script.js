@@ -83,7 +83,7 @@
 		    a.href = Links[i][2];
 		    li.appendChild(a);
 		    document.getElementById("NosSources").appendChild(li);
-	    }
+	    };
 		
 		lis = document.querySelectorAll('.tabs li a');
 		for (let i = 0; i < lis.length; i++) {
@@ -93,7 +93,7 @@
 			a.href = lis[i].href;
 			li.appendChild(a);
 			document.getElementById("NosPages").appendChild(li);
-		}
+		};
 	}; createSources();
 
     //Detection id dans l'url
@@ -109,11 +109,11 @@
             } else {
                 document.querySelector('.default-link').classList.add('active');
                 console.log('- Pas de window.location.hash existant: affectation automatique à accueil.');
-            }
+            };
         } catch(error) {
             document.querySelector('.default-link').classList.add('active');
             console.log('- L\'ID présente dans le window.location.hash n\'existe pas');
-        }
+        };
     }; hashChange();
 
     // Event Click
@@ -128,13 +128,13 @@
                         document.querySelector('.tab-content.active').classList.remove('active');
                         document.querySelector(hrefEnfant).classList.add('active');
                         document.querySelector('.tabs .active').classList.remove('active');
-                        document.querySelector(".tabs a[href=\'" + hrefEnfant + "\']").parentNode.classList.add('active')
+                        document.querySelector(".tabs a[href=\'" + hrefEnfant + "\']").parentNode.classList.add('active');
                         console.log('- Changement d\'onglet effectué pour ' + hrefEnfant + '.');
-                    }
-                }
-            }
-        })
-    }
+                    };
+                };
+            };
+        });
+    };
 
     // Boucle all li
 
@@ -142,8 +142,8 @@
     for (let i = 0; i < lis.length; i++) {
         ongletClick(lis[i]);
         window.addEventListener('hashchange', hashChange);
-    }
-})()
+    };
+})();
 if(document.location.href.includes("mode=light")) {
 	document.getElementById("fichierCSS").href = "./media/styleWhite.css";
 	document.getElementById("darkmode").value = "Darkmode";
@@ -160,7 +160,7 @@ if(document.location.href.includes("mode=light")) {
 	document.getElementById("darkmode").value = "Darkmode";
 	document.getElementById("darkmode").title = "Appuie pour mettre en mode sombre !";
 	console.log("- La page est en clair.");
-}
+};
 console.log("-- Page chargée.");
 
 // Mode Sombre
@@ -172,9 +172,11 @@ function jourNuit() {
 		document.location.href = document.location.href.replace("mode=light", "mode=dark");
 		console.log("- La page est en sombre.");
 		document.getElementById("darkmode").title = "Appuie pour mettre en mode clair !";
+		alert("- Cette page va devenir en sombre.");
 	} else {
 		document.location.href = document.location.href.replace("mode=dark", "mode=light");
 		console.log("- La page est en clair.");
 		document.getElementById("darkmode").title = "Appuie pour mettre en mode sombre !";
+		alert("- Cette page va devenir en clair.");
 	}
 };

@@ -36,19 +36,19 @@ p.paragraphe {
 }
 
 a:link {
-	color: #0000FF;
+	color: #00F7FF;
 }
 a:visited {
-	color: #B900FF;
+	color: #F66EFF;
 }
 a:active {
 	color: #FF0000;
 }
 a:focus {
-	color: #0072C6;
+	color: #6EA7FF;
 }
 a:hover {
-	color: #0072C6;
+	color: #6EA7FF;
 }
 
 
@@ -70,7 +70,7 @@ ul.tabs, li .tabs {
 }
 .tabs a {
     display: inline-block;
-    background-color: #555555;
+    background-color: #4F4F4F;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 10px 15px;
 }
