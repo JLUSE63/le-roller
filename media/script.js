@@ -1,5 +1,5 @@
 (function () {
-	//création des sources
+	// Création des sources
 
 	function createSources() {
 		const Links = [
@@ -69,7 +69,7 @@
 				"https://www.colbert-innovation.eu/"
 			]
 		].sort();
-		for (i in Links) {
+		for (let i = 0; i < Links.length; i++) {
 			let a = document.createElement('a');
 		    let li = document.createElement('li');
 		    let lien = document.createTextNode(Links[i][0]);
@@ -90,7 +90,7 @@
 		};
 	}; createSources();
 
-    //Detection id dans l'url
+    // Détection id dans l'url
 
     function hashChange() {
         try {
@@ -130,7 +130,7 @@
         });
     };
 
-    // Boucle all li
+    // Boucle infini li
 
     lis = document.querySelectorAll('.tabs li');
     for (let i = 0; i < lis.length; i++) {
@@ -138,6 +138,7 @@
         window.addEventListener('hashchange', hashChange);
     };
 })();
+
 if(document.location.href.includes("mode=light")) {
 	document.getElementById("fichierCSS").href = "./media/styleWhite.css";
 	document.getElementById("darkmode").value = "Darkmode";
@@ -155,6 +156,7 @@ if(document.location.href.includes("mode=light")) {
 	document.getElementById("darkmode").title = "Appuie pour mettre en mode sombre !";
 	console.log("- La page est en clair.");
 };
+
 console.log("-- Page chargée.");
 
 // Mode Sombre
@@ -166,11 +168,17 @@ function jourNuit() {
 		document.location.href = document.location.href.replace("mode=light", "mode=dark");
 		console.log("- La page est en sombre.");
 		document.getElementById("darkmode").title = "Appuie pour mettre en mode clair !";
-		alert("- Cette page va devenir en sombre.");
+		alert("- Cette page va devenir sombre.");
 	} else {
 		document.location.href = document.location.href.replace("mode=dark", "mode=light");
 		console.log("- La page est en clair.");
 		document.getElementById("darkmode").title = "Appuie pour mettre en mode sombre !";
-		alert("- Cette page va devenir en clair.");
+		alert("- Cette page va devenir clair.");
 	}
 };
+
+// Ouvrir une image
+
+function imageLink(im) {
+	window.open(im.src);
+}
